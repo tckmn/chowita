@@ -1,0 +1,277 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{fontspec}
+\setmainfont{Noto Sans}
+
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Sans CJK TC}
+
+\newfontfamily\arabicfont{Noto Kufi Arabic}
+\newfontfamily\cherokeefont{Noto Sans Cherokee}
+\newfontfamily\devanagarifont{Noto Sans Devanagari}
+\newfontfamily\kannadafont{Noto Sans Kannada}
+\newfontfamily\khmerfont{Noto Sans Khmer}
+\newfontfamily\myanmarfont{Noto Sans Myanmar}
+\newfontfamily\tamilfont{Noto Sans Tamil}
+\newfontfamily\thaifont{Noto Sans Thai}
+
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{hyperref}
+
+\newcommand{\dfn}[4]{\noindent\textbf{#1}: #2\quad(#3)\hfill\emph{#4}\\}
+\newcommand{\ex}[2]{\noindent#1\bigskip\par#2\bigskip}
+
+\title{Chowita}
+\author{KeyboardFire $\langle$\href{mailto:andy@keyboardfire.com}{andy@keyboardfire.com}$\rangle$}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+Chowita (\textbf{tcowitha}, pronounced /t͜ʃowitʰa/) is\ldots TODO
+
+\section{Phonology}
+
+\subsection{Phonemic inventory}
+
+\begin{tabular}{lllllll}
+    && bilabial & alveolar & postalveolar & velar & glottal \\
+    nasal && (m) & n & (n̠) & (ŋ) \\
+    \multirow{3}{*}{stop} & tenuis & p & t & & k & ʔ \\
+    & aspirated & pʰ & tʰ & & kʰ \\
+    & voiced & b & d & & g \\
+    \multirow{2}{*}{fricative} & voiceless & f & s & ʃ & x & h \\
+    & voiced & v & z & ʒ & ɣ \\
+\end{tabular}\bigskip
+
+vowels: a e i o u ə
+
+approximants: j w
+
+\subsection{Phonotactics}
+
+The syllable structure is \textbf{(C)(C)(G)V(G)(N)}, where \textbf{C}
+represents a consonant, \textbf{G} represents a glide (/j/ or /w/), \textbf{V}
+represents a vowel, and \textbf{N} represents a nasal.
+
+Consonant clusters are always [stop][fricative]; both must be of the same
+voicing, and aspirated stops are not allowed in clusters.
+
+Trailing nasals assimilate to the following place of articulation (or [n] if it
+is glottal). For example, \textbf{gankce} ``swim'' is pronounced /gaŋ.k͜ʃe/ with
+a velar nasal.
+
+The second (G) may not be /w/.
+
+\subsection{Allophony}
+
+Velars are in free variation with uvulars, most notably among the fricatives.
+The voiced velar fricative may also be realized as an approximant or uvular
+trill.
+
+After a consonant, the semivowels w and j are typically realized as rounding
+(Xʷ) and palatalization (Xʲ) respectively of the previous consonant.
+Furthermore, ʃʲ and ʒʲ are frequently realized as ɕ and ʑ.
+
+Aspirated stops may be freely replaced with ejectives, and voiced stops with
+implosives.
+
+\section{Orthography}
+
+\begin{tabular}{lllllll}
+    && bilabial & alveolar & postalveolar & velar & glottal \\
+    nasal && & n \\
+    \multirow{3}{*}{stop} & tenuis & p & t & & k & ' \\
+    & aspirated & ph & th & & kh \\
+    & voiced & b & d & & g \\
+    \multirow{2}{*}{fricative} & voiceless & f & s & c & x & h \\
+    & voiced & v & z & j & gh \\
+\end{tabular}\bigskip
+
+vowels: a e i o u y
+
+approximants: y w
+
+\section{Morphology}
+
+All root words are one syllable of the form \textbf{(C)C(G)V(G)(N)}.
+Additionally, the consonants will never be glottals (h or ').
+
+Words are frequently modified by infixes. There are two types of infixes:
+
+\begin{itemize}
+
+    \item \emph{Glottal infixes} insert a vowel followed by a glottal stop
+        directly before the vowel in a root. The syntax that this document will
+        use to represent glottal infixes is, for example, a$_g$, which
+        represents an infix of \textbf{a} followed by a glottal stop.
+
+        As an example of the usage of glottal infixes, the infix i$_g$ applied
+        to the word \textbf{kway} results in the modified word \textbf{kwi'ay}.
+
+    \item \emph{Approximant infixes} insert a vowel followed by an approxmant
+        which varies depending on the vowel that follows it. Before an
+        unrounded vowel, the approximant \textbf{y} /j/ is used. Before a
+        rounded vowel, \textbf{w} /w/ is used. The syntax for this is a$_a$.
+
+        For example, the infix e$_a$ applied to the word \textbf{pci} is
+        \textbf{pcewi}, but applied to the word \textbf{bzu}, it becomes
+        \textbf{bzeyu}. Note the usage of \textbf{w} before \textbf{i} and
+        \textbf{y} before \textbf{u}.
+
+\end{itemize}
+
+\section{Syntax}
+
+\ex{%
+Chowita is an SVO language. All phrases have the following structure:
+}{
+[subject-a$_a$] [verb-a$_a$] [direct object]
+}
+
+\ex{%
+Phrases may be used as nested subjects for other phrases:
+}{
+[phrase-a$_a$] [verb-a$_a$] [direct object]
+}
+
+\ex{%
+Otherwise, they may be explicitly terminated to form a full sentence:
+}{
+[phrase-e$_a$]
+}
+
+\ex{%
+More complex constructions (subclauses, sentential arguments, abstractions,
+relative clauses) can be formed with the word \textbf{vy} as follows:
+}{
+\textbf{vy} [phrase-e$_a$]
+}
+
+\ex{%
+Due to the small lexicon, many ``words'' are compounds of smaller words:
+}{
+[word1][word2]\ldots[wordn]
+}
+
+\ex{%
+To be more specific with how words are grouped, use \textbf{u$_a$}:
+}{
+[word1][word2-u$_a$][word3][word4-u$_a$][word5-u$_a$u$_a$]
+
+$\to$ [word1 word2][word3 [word4 word5]]
+}
+
+\noindent Essentially, \textbf{u$_a$} "binds" the two previous words into a new
+word.
+
+\section{Lexicon}
+
+\subsection{Grammatical words}
+
+\begin{tabularx}{\textwidth}{lXX}
+    word/infix & description & notes \\[0.5em]
+
+    \textbf{a$_a$} & noun/verb separator & \\
+    \textbf{e$_a$} & phrase/subclause terminator & \\
+    \textbf{o$_a$} & flip & \\
+    \textbf{u$_a$} & compound binder & \\[0.5em]
+
+    \textbf{a$_g$} & polar-opposite negation & \\
+    \textbf{e$_g$} & nonscalar negation & \\
+    \textbf{o$_g$} & augmentative & \\
+    \textbf{i$_g$} & diminutive & \\[0.5em]
+
+    \textbf{vy} & subclause introducer & can be realized as [β] \\
+    \textbf{xy} & subclause "it" & from mathematical "x" \\
+    \textbf{fy} & postfix flip & can be realized as [ɸ] \\
+    \textbf{sy} & postfix polar-opposite negation & can be realized as [θ] \\
+    \textbf{zy} & postfix nonscalar negation & can be realized as [ð] \\
+\end{tabularx}
+
+\subsection{Numbers}
+
+TODO
+
+\subsection{Vocabulary}
+
+\dfn{pi}{S is me}{I, me}{from English ``me''}
+\dfn{tu}{S is you}{you}{from Spanish ``tú''}
+\dfn{ve}{S is this}{this}{from Kurdish ``ev'' this}
+\dfn{cu}{S is that}{that}{from Turkish/Crimean Tatar ``şu'' that}
+\dfn{thi}{S is that there}{that there}{from Thai ``{\thaifont ที่นั่น}'' (``tîi nân'') there}
+
+\dfn{bve}{S is an animal}{animal}{from English ``BVetMed'' Bachelor of Veterinary Medicine}
+\dfn{bzu}{S is a moon}{moon}{from French ``bzou'' werewolf}
+\dfn{dva}{S is air}{air}{from Latvian ``dvaša'' breath, air}
+\dfn{dzwon}{S is an ear}{ear}{from Polish ``dzwon'' bell}
+\dfn{ghan}{S is music}{music, song}{from Arabic ``{\arabicfont غنى}'' (``ɣannaː'') sing}
+\dfn{ghwo}{S is a tongue}{tongue}{from Greek ``γλώσσα'' tongue}
+\dfn{gva}{S is a sound}{sound, noise}{from Esperanto ``gvati'' spy}
+\dfn{kce}{S is water}{water, wet}{from Albanian ``kshetë'' mermaid}
+\dfn{kway}{S is a star}{star, sun}{from Tupinambá ``kûarasy'' / Guarani ``kuarahy'' sun}
+\dfn{kya}{S is an arm}{arm}{from Kannada ``{\kannadafont ಕೈ}'' (``kai'') hand}
+\dfn{kyo}{S is a leg}{leg}{from Welsh ``coes'' leg}
+\dfn{pci}{S is a dog}{dog, canine}{from Polish ``psi'' canine}
+\dfn{pfe}{S is a horse}{horse}{from German ``pferd'' horse}
+\dfn{pxay}{S is flesh}{flesh, meat, fruit}{from Unami ``pxàshikàn'' dried meat/jerky}
+\dfn{pya}{S is a rock}{rock, stone}{from Romanian ``piatră'' stone}
+\dfn{sye}{S is the back (of something)}{back}{from Italian ``schiena'' back}
+\dfn{tswe}{S is a tree}{tree}{from Japanese ``棒''/``つえ'' (``tsue'') stick}
+\dfn{twa}{S is a person}{person, human, he, she}{from Tagalog ``tao'' person / Vietnamese ``tao'' I, me}
+\dfn{txu}{S is a digit}{digit, finger, toe}{from Aleut ``atx̂ux̂'' finger}
+\dfn{zin}{S is an eye}{eye}{from Ukranian ``зіни́ця'' pupil}
+
+\dfn{bay}{S is good}{good}{from Malay ``baik'' good}
+\dfn{co}{S is hot}{hot, warm}{from French ``chaud'' warm}
+\dfn{dun}{S is true}{true, correct, accurate}{from Vietnamese ``đúng'' correct}
+\dfn{gzi}{S is small}{small, little}{from Unix command ``gzip''}
+\dfn{pxo}{S is female}{female, girl, woman}{from Allentiac ``pxota'' girl}
+\dfn{swa}{S is light}{light}{from Afrikaans ``swaar'' heavy}
+\dfn{von}{S is new}{new, young}{from Serbo-Croatian ``нов'' new}
+\dfn{xwa}{S is easy}{easy, simple}{from Swedish ``självklart'' obviously}
+\dfn{xwi}{S is white}{white}{from Icelandic ``hvítur'' white}
+
+\dfn{ghe}{S sleeps}{sleep}{from Proto Indo-European ``*ǵʰers-'' stiff}
+\dfn{gwey}{S lives}{live, alive, survive}{from Proto Indo-European ``*gʷeiH$_{\mathit{3}}$w-'' live}
+
+\dfn{bo}{S is sensed by O}{sense, observe, see, feel, hear, smell}{from Korean ``보다'' (``boda'') see}
+\dfn{bjun}{S is enjoyed by O}{enjoy, fun}{from Czech ``bžunda'' fun}
+\dfn{cye}{S is written by O}{write}{from Mandarin ``寫'' (``xiě'') write}
+\dfn{djan}{S is known by O}{know}{from Hindi ``{\devanagarifont जानना }'' (``jānnā'') know}
+\dfn{dway}{S is feared by O}{fear, scare}{from Cherokee ``{\cherokeefont ᎤᎾᏰᎯᏍᏗ}'' (``unayehisdi'') fear}
+\dfn{fay}{S is made by O}{make, construct, create, form}{from Norman ``faithe'' do, make}
+\dfn{khon}{S is consumed by O}{consume, eat, drink}{from English ``consume''}
+\dfn{kfun}{S is struck by O}{strike, hit, kick, bite}{from Noone/Noni ``kfune'' strike}
+\dfn{kuy}{S is given by O}{give, donate}{from Quechua ``quy'' give}
+\dfn{kxay}{S is amusing to O}{amuse, funny}{from ǃXóõ ``kxʻái'' laugh}
+\dfn{gan}{S is gone to by O}{go}{from Sanskrit ``{\devanagarifont गम्}'' (``gam'') go}
+\dfn{pey}{S is referred to by name O}{name, call}{from Tamil ``{\tamilfont பெயர்}'' (``peyar'') name}
+\dfn{tci}{S is done with instrument O}{instrument, tool, utensil}{from Lojban ``tutci -tci-'' tool}
+\dfn{tfi}{S is searched for by O}{search, look for}{from Maltese ``tfittxija'' search}
+\dfn{tha}{S is communicated by O}{communicate, express}{from Khmer ``{\khmerfont ថា}''  (``tʰaa'') say}
+\dfn{thwe}{S is launched by O}{launch, throw, spit, eject}{from Burmese ``{\myanmarfont ထွေး }'' (``htwe:'') spit}
+\dfn{xo}{S is wanted by O}{want, desire}{from Russian ``хоте́ть'' want}
+
+\subsection{Common compounds}
+
+\dfn{bozin}{S is seen by O}{see}{bo + zin}
+\dfn{bodzwon}{S is heard by O}{hear}{bo + dzwon}
+\dfn{fgk}{lol}{lol}{abbreviation of \textbf{faygvakxay}}
+\dfn{gandva}{S is flown to by O}{fly}{gan + dva}
+\dfn{gankce}{S is swum to by O}{swim}{gan + kce}
+\dfn{ggg}{rip}{rip}{abbreviation of \textbf{ghegvagzi}}
+\dfn{tcewitha}{S is a language}{language}{py + tci + tha; alt: tcifytha}
+\dfn{xoghe}{S is tired}{tired}{xo + ghe}
+
+\section{Sample texts}
+
+TODO
+
+\end{document}
